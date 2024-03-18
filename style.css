@@ -1,0 +1,63 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(3, 2, 29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.container
+{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+  
+
+}
+.box
+{
+    border: 1px solid rgb(255, 223, 223);
+    width: 80px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: antiquewhite;
+    box-shadow: 0 0 0 2px;
+}
+#player-status
+{
+    padding: 40px;
+    color: bisque;
+    font-size: 25px;
+    font-family: cursive;
+    font-weight: 500;
+}
+button{
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(255, 121, 121);
+    color: rgb(255, 236, 236);
+
+}
+.win{
+    animation: winAnimation ease-in-out 1s infinite;
+}
+
+@keyframes winAnimation {
+  0%{background-color: #6e6e6e;}
+  100%{background-color: #1a145e;}
+  
+}
+  
